@@ -14,18 +14,19 @@
 
 """
 
-age=int(input('Введите ваш возраст: '))
 
-def age_one (age):
+
+def how_old (age):
     if 0<=age<=6:
         return 'Вам нужно в садик'
-    elif 7<=age<=16:
+    elif age<=16:
         return 'Вас ждет школа'
     elif 17<=age<=24:
         return 'Удачной учебы в ВУЗе'
     else:
         return'Работать, негры! Солнце еще высоко!'
+age=int(input('Введите ваш возраст: '))
 
-print (age_one(age))
+print (how_old(age))
 
 #Ура! все работает!

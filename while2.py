@@ -16,16 +16,16 @@
 """
 
 
-def ask_user(ask_1):
+def ask_user(question):
     dict_1={'Как дела?':'Хорошо!', 'Что делаешь?':'Программирую', 'Получается?': 'Пока не очень('}
     while True:
-        ask_1=input('Введите вопрос: ')
-        if ask_1==dict_1.get(f'{ask_1}'): #КАК обратиться к ключу словаря??
-            print (dict_1['ask_1'])       #КАК обратиться к соответсвующему значению словаря????
+        question=input('Введите вопрос: ')
+        if question in dict_1:                 
+            print (dict_1.get(question))       
             break
-       # else:
-       #    print ('В моем словаре нет этого..')
+        else:
+           print ('В моем словаре нет этого..')
         
     
 
-ask_user('ask_1')
+ask_user('question')

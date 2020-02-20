@@ -18,16 +18,22 @@
 #b=input('Введите втрую строку: ')
 
 def strings_one (a,b):
-    a=input('Введите первую строку: ')
-    b=input('Введите втрую строку: ')
-    if a or b !=type.str:
-        return '0'       #почему-то зацикливается и выдает только 0, 
-                         #вариант a or b != type(str) -то же самое - 0
-    elif len('a')==len('b'):
-        return '1'
-    elif len('a')>len('b'):
-        return '2'
-    elif 'b'=='learn':
-        return '3'
+    if type(a)==type(b)==str:
+        if len(a)==len(b):
+            return 1
+        elif len(a)>len(b):
+            return 2
+        elif b=='learn':
+            return 3
+    else:
+        return 0
 
-strings_one('a','b')
+    #a=input('Введите первую строку: ')
+    #b=input('Введите вторую строку: ')      
+
+def main():
+    
+    strings_one ('tigra','tigrra')
+
+if __name__=='__main__':
+    main()

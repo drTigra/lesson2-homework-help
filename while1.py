@@ -1,12 +1,12 @@
 
-def ask_user(ask_1):
+def ask_user(question):
   while True:
-      ask_1=input('Как дела? ')
-      if ask_1=='Хорошо':
+      question=input('Как дела? ')
+      if question=='Хорошо':
           print ('Рад за тебя') 
-          break
+          return
          
-ask_user('ask_1')
+ask_user('question')
 
 
 # я потратил на это пол-дня!!все пропало/// писать в конце ask_user(ask_1)- не правильно,
